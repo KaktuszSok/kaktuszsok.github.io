@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "A Test Post"
+date:   2025-05-22 10:17:50 +0200
+category: misc
+---
+This is a test post.
+
+Here is a jekyll code snippet:
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+Here is a traditional markdown code snippet:
+A `single line snippet` here.
+```cs
+// A multi-line snippet here,
+// with C# highlighting.
+public void Woo(int num) {
+  for(int x = 0; x < num; x++) {
+    Console.Log($"woo {x}");
+  }
+}
+```
+
+Here is [A Link][example-link] to a different website.
+Here is another link, to [Another Post]({% post_url 2025-05-22-welcome-to-jekyll %}) on this website.
+
+[example-link]: https://en.wikipedia.org/wiki/Wieliczka
+
+Here is an image:
+![An example image](/assets/Wojtek.PNG)
+
+Here is a gif:
+![An example gif](/assets/bear.gif)
+
+And here is an embedded video:
+{% include youtubePlayer.html id="P7MwGSYocgc" %}
