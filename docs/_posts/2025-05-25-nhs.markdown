@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "Nowa Huta Simulator"
+date:   2025-05-25 14:28:00 +0200
+category: projects
+---
+{% include youtubePlayer.html id="5BoZVQV3tQY" %}
+
+Nowa Huta Simulator (NHS) is an Eastern-European themed multiplayer shooter which I worked on between 2016 and 2018.
+Players assume the identity of mischievous hooligans and fight each other using a vast arsenal of weapons, explosives and vehicles.
+Players can fortify encampments by spending 'respect' points to construct walls, ladders, machine gun nests, bombs, cars or tanks.
+Respect points are gained by killing enemies or occupying 'hardbass zones'. The game also supports PvE where players fight against masses of bots.
+
+## Features
+- Room-based multiplayer (using Photon Unity Networking)
+- Advanced bullet physics
+  - Bullets are simulated with sub-tick precision using a series of small raycasts. They experience bullet drop as they fly and can ricochet from steep impacts.
+  - Shooting through walls - bullets have a penetration value which they lose while travelling through walls, depending on the wall's shape and material.
+  - Heavier shells, such as those from anti-tank guns, spawn smaller projectiles (shrapnel) upon exploding.
+- Vehicles
+  - Wheeled cars, tracked tanks, bicycles
+  - Vehicles can be mounted and controlled by players, supporting multiple passengers and seat-based roles such as the driver controlling movement and the gunner controlling the turret.
+  - Vehicles consist of various modules. Damaging the wheels can immobilise a vehicle, the fuel tanks can be set on fire, cannons can be disabled and if certain modules receive fatal damage the vehicle will be destroyed.
+  - A simple convex mesh is used for physics interactions with the map, while a precise mesh is used for checking projectile collisions. This allows for accurate armour profiles.
+- Variety of weapons
+  - Melee weapons
+  - Versatile gun system allowing for pistols, machine guns, sniper rifles, shotguns, grenade launchers, RPGs, flamethrowers, and any combination of their properties.
+  - Gun sway and recoil
+  - Wide array of explosives including gas, smoke and anti-tank grenades, proximity mines, remotely detonated sticky mines, etc.
+- Movement
+  - Running, dashing, jumping, squatting, crawling and side-hopping.
+  - Stamina determines how long you can run and dash for, and the weight of your equipped weapons determines your movement speed and jump height.
+- Construction
+  - As mentioned before, 'respect' points are acquired through combat and can be spent to construct helpful objects.
+  - Walls made of wood, brick and metal. Stone pillars. Ladders.
+  - Stationary machine guns, which can be controlled by players.
+  - C4 explosives, which can be remotely detonated.
+  - Vehicles can be summoned and will despawn if destroyed or inactive.
+  - These can be attached to vehicles, allowing for 'Mad Max'-style improvised armour, mobile gun nests, or whatever else the imagination allows.
+
+## Gallery
+![An example image](/assets/nhs-church.png) An improvised encampment atop a church.
+{% include youtubePlayer.html id="cCbU3UMAXFs" %} The devastating internal damage to a tank hit by an anti-tank round.
+
+
+*The 3D models for most weapons and vehicles were created by my friends. Many textures and some audio assets were found on the internet. The rest of development was done by me.*
