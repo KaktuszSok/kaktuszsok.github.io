@@ -36,7 +36,7 @@ Respect points are gained by killing enemies or occupying 'hardbass zones'. The 
   - Stationary machine guns, which can be controlled by players.
   - C4 explosives, which can be remotely detonated.
   - Vehicles can be summoned and will despawn if destroyed or inactive.
-  - These can be attached to vehicles, allowing for 'Mad Max'-style improvised armour, mobile gun nests, or whatever else the imagination allows.
+  - Constructed objects can be attached to vehicles, allowing for 'Mad Max'-style improvised armour, mobile gun nests, or whatever else the imagination allows.
 
 ## Gallery
 ![An example image](/assets/nhs-church.png) An improvised encampment atop a church.
