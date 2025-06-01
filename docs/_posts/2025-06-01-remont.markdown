@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "Nowa Huta Remont"
+date:   2025-06-01 18:24:00 +0200
+category: projects
+---
+Nowa Huta Remont was an intended sequel to [NHS]({% post_url 2025-05-25-nhs %}) developed during late 2021/early 2022.
+Despite the project being discontinued, it proved to be a valuable testing ground for highly technical mechanics.
+The most prominent of these is the fully destructible environment, optimised for both client-side performance and multiplayer bandwidth and stability.
+
+## Gallery
+![Destructible building 1](/assets/remont-blok.gif) A destructible apartment block.
+
+![Destructible building 2](/assets/remont-house.gif) A destructible house.
+
+![Terrain scarring and tree uprooting](/assets/remont-explosion.gif) Terrain scarring and uprooting of trees.
+
+![Traversing a ruined building](/assets/remont-ruins.gif) Traversing a ruined building.
+
+{% include youtubePlayer.html id="4cSLrHfHkyw" %} A video showcasing grenades, destruction physics and sound effects.
+
+## Features
+- **Destructible buildings**
+  - Walls fracture when damaged, using Voronoi diagrams and connectivity graphs. All fragments belonging to the same building are connected in one graph, and break off once they can not reach a 'root' node.
+  - Windows can be shattered by punching, shooting, or throwing physics objects like grenades through them.
+  - Furniture placed in a building is automatically connected to the Voronoi fragment below it.
+  - A fractured wall's collision is made up of many convex colliders, while its renderer uses a single combined mesh. This is because physics prefers many simple meshes while rendering prefers one complex mesh.
+  - Fragments are synchronised to other players. They combine client-side physics with networked position updates to achieve smooth movement that maintains consistency between clients.
+  - Connectivity graphs are synchronised so that continuity is preserved even if the host disconnects and a different client must take over.
+- **Deformable terrain**
+  - Craters form in the ground if a powerful explosion occurs.
+  - Trees are uprooted, grass is removed and the ground becomes charred.
+  - Past deformation events are stored and sent to any newly-joining players so their terrain is correctly modified.
+- **Optimised vegetation**
+  - Trees are combined into cells. If a cell is close to the player, its trees are rendered using mesh instancing. If it is far, billboards are instanced instead.
+  - Tree billboards automatically generated from mesh.
+  - Only trees near rigidbodies have their colliders enabled.
+  - Tree positions are stored in a quadtree, allowing for quick retrieval of the nearest tree (used during collisions to uproot the impacted tree) or of all trees in some radius (used during explosions).
+  - This allows for tens of thousands of trees in a scene at once.
+- **Optimised networking**
+  - Lower-precision data types are used to synchronise less important features (like position of fragments) while higher-precision types are used for important features like player position.
+- **Optimised bullet physics**
+  - Rather than multiple sub-tick raycasts like in NHS, bullets now use only one pair of raycasts (for front-faces and back-faces) per tick.
+  - Each front-face hit tells the bullet it entered a wall, and each back-face hit tells it it exited a wall. Penetration loss is calculated based on the distance between consecutive front- and back-face hits, scaled by material density.
