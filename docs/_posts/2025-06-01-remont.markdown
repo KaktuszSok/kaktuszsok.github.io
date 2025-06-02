@@ -9,13 +9,13 @@ Despite the project being discontinued, it proved to be a valuable testing groun
 The most prominent of these is the fully destructible environment, optimised for both client-side performance and multiplayer bandwidth and stability.
 
 ## Gallery
-![Destructible building 1](/assets/remont-blok.gif) A destructible apartment block.
+![Destructible building 1](/assets/remont-blok.webp) A destructible apartment block.
 
-![Destructible building 2](/assets/remont-house.gif) A destructible house.
+![Destructible building 2](/assets/remont-house.webp) A destructible house.
 
-![Terrain scarring and tree uprooting](/assets/remont-explosion.gif) Terrain scarring and uprooting of trees.
+![Terrain scarring and tree uprooting](/assets/remont-explosion.webp) Terrain scarring and uprooting of trees.
 
-![Traversing a ruined building](/assets/remont-ruins.gif) Traversing a ruined building.
+![Traversing a ruined building](/assets/remont-ruins.webp) Traversing a ruined building.
 
 {% include youtubePlayer.html id="4cSLrHfHkyw" %} A video showcasing grenades, destruction physics and sound effects.
 

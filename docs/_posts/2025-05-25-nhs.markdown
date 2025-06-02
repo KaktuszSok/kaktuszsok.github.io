@@ -13,7 +13,7 @@ Players can fortify encampments by spending 'respect' points to construct walls,
 Respect points are gained by killing enemies or occupying 'hardbass zones'. The game also supports PvE where players fight against masses of bots.
 
 ## Gallery
-![Combat gif](/assets/nhs-bin.gif) Fighting against bots using an explosive bin and submachine gun.
+![Combat gif](/assets/nhs-bin.webp) Fighting against bots using an explosive bin and submachine gun.
 
 ![Church encampment](/assets/nhs-church.png) An improvised encampment atop a church.
 
