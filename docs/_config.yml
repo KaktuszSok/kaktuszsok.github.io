@@ -21,7 +21,7 @@
 title: Portfolio - Jakub Pracuch
 email: jakub.oliwier.p@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A portfolio of my work!
+  A selection of my work! Games made with the Unity3D engine using C#.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kaktuszsok.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 domain: "kaktuszsok.github.io"
