@@ -13,11 +13,14 @@ Players can fortify encampments by spending 'respect' points to construct walls,
 Respect points are gained by killing enemies or occupying 'hardbass zones'. The game also supports PvE where players fight against masses of bots.
 
 ## Gallery
-![Combat gif](/assets/nhs-bin.webp) Fighting against bots using an explosive bin and submachine gun.
+![Combat gif](/assets/nhs-bin.webp)\
+Fighting against bots using an explosive bin and submachine gun.
 
-![Church encampment](/assets/nhs-church.png) An improvised encampment atop a church.
+![Church encampment](/assets/nhs-church.png)\
+An improvised encampment atop a church.
 
-{% include youtubePlayer.html id="cCbU3UMAXFs" %} The devastating internal damage to a tank hit by an anti-tank round.
+{% include youtubePlayer.html id="cCbU3UMAXFs" %}
+The devastating internal damage to a tank hit by an anti-tank round.
 
 ## Features
 - **Room-based multiplayer** (using Photon Unity Networking)
@@ -47,4 +50,4 @@ Respect points are gained by killing enemies or occupying 'hardbass zones'. The 
   - Friendly bots can be spawned and made to follow the player.
   - Constructed objects can be attached to vehicles, allowing for 'Mad Max'-style improvised armour, mobile gun nests, or whatever else the imagination allows.
 
-*The 3D models for most weapons and vehicles were created by my friends. Many textures and some audio assets were found on the internet. The rest of development was done by me.*
+*The 3D models for most weapons and vehicles were created by my friends. Many textures and some audio assets were found on the internet. Music was used with artist's permission. The rest of development was done by me.*

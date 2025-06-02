@@ -1,0 +1,58 @@
+---
+layout: post
+title:  "Zuomisk"
+date:   2025-06-02 18:02:00 +0200
+category: projects
+---
+Zuomisk is a wave-based tank combat game developed during late 2022-2023.
+
+The player is a lone survivor in a desolate city swarming with hostile tanks.
+They must collect fuel and ammo to sustain their tank for as long as possible, as increasingly powerful enemies attempt to hunt them down.
+
+## Gallery
+![Tank combat](/assets/zuomisk-battle.webp)\
+Combat against enemy tanks.
+
+![Tank editor](/assets/zuomisk-editor.webp)\
+Choosing a combination of parts for the player's tank.
+
+{% include youtubePlayer.html id="eEllGgUSnqA" %}
+Gameplay video, with audio.
+
+## Features
+- **Modular vehicles**
+  - Vehicles are assembled from parts. The hull, turret and gun may be mixed and matched in many ways.
+  - Parts have a number of slots where other parts may be mounted. Slots can be configured to allow only certain parts, to prevent unrealistic combinations.
+- **Advanced damage mechanics**
+  - Armour has variable thickness, so aiming for weak spots is essential.
+  - Impact angle affects effective thickness, so one should aim for flat sections.
+    - Hitting sufficiently sloped armour results in a ricochet, where the shell is deflected and may hit a different surface.
+  - Different cannons use different types of ammunition.
+    - Armour-Piercing (AP) shells which only do impact damage to things directly in their path.
+    - High-Explosive (HE) shells which only do explosion damage in a set radius. Armour softens the damage dealt by explosions, depending on its thickness.
+    - APHE shells deal a combination of impact and explosion damage.
+    - Some shells are less affected by sloped armour, others more (normalisation).
+  - Both single-shot cannons and clip-fed autocannons are implemented.
+  - Ramming damage!
+- **Module-based health**
+  - Vehicles do not have a single health bar. Instead, they are composed of modules with independent health.
+  - Some modules such as the turret are critical, and the tank will be destroyed if that module's health is depleted.
+  - Other modules can be destroyed to partially disable the tank. For example the tracks can be blown off to immobilise an opponent.
+- **Supply collection**
+  - Fuel barrels and ammunition crates can be picked up to replenish the player's fuel or ammo.
+  - Running out of fuel is fatal.
+  - Supplies can be found throughout the map or attached by chain to enemies.
+    - You can steal a chained barrel/crate from an enemy without killing them, if you manage to touch it.
+    - Occasionally, an aircraft will pass overhead carrying a large amount of supplies. These can be shot down and looted.
+- **Enemy AI**
+  - Enemy tanks use a navigation mesh (navmesh) to find their way towards the player.
+  - Enemies fire with a random delay, causing them to sometimes narrowly miss the player which makes for a more fair and exciting experience.
+  - Enemies will stop once close enough and 'angle' their armour relative to the player, to increase the effective thickness of their armour.
+- **Camouflage system**
+  - Hiding behind foliage reduces the distance at which enemies can see you.
+  - Firing your gun alerts enemies within a large radius.
+- **Increasing difficulty**
+  - Each wave can be configured, spawning a set amount of enemies from a pool of options.
+  - Enemy definitions allow for randomising which part is used for a slot. For example, we could choose to define the hull and turret, but let the gun be random.
+- **Terrain deformation** and uprooting of trees.
+  - The terrain system developed in [Nowa Huta Remont]({% post_url 2025-06-01-remont %}) was flexible enough to transfer over to this project.
