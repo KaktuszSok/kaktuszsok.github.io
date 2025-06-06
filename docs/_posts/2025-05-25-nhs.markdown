@@ -3,8 +3,13 @@ layout: post
 title:  "Nowa Huta Simulator"
 date:   2025-05-25 14:28:00 +0200
 category: projects
+tags: multiplayer tanks shooter
+description: Multiplayer shooter with various weapons, explosives, vehicles, construction system and advanced bullet physics.
+image: /assets/nhs-bin.webp
+header:
+  image: false
 ---
-{% include youtubePlayer.html id="5BoZVQV3tQY" %}
+{% include embed/youtube.html id="5BoZVQV3tQY" %}
 
 Nowa Huta Simulator (NHS) is an Eastern-European themed multiplayer shooter which I worked on between 2016 and 2018.
 Players assume the identity of mischievous hooligans and fight each other using a vast arsenal of weapons, explosives and vehicles.
@@ -13,13 +18,13 @@ Players can fortify encampments by spending 'respect' points to construct walls,
 Respect points are gained by killing enemies or occupying 'hardbass zones'. The game also supports PvE where players fight against masses of bots.
 
 ## Gallery
-![Combat gif](/assets/nhs-bin.webp)\
-Fighting against bots using an explosive bin and submachine gun.
+![Combat gif](/assets/nhs-bin.webp)
+_Fighting against bots using an explosive bin and submachine gun._
 
-![Church encampment](/assets/nhs-church.png)\
-An improvised encampment atop a church.
+![Church encampment](/assets/nhs-church.png)
+_An improvised encampment atop a church._
 
-{% include youtubePlayer.html id="cCbU3UMAXFs" %}
+{% include embed/youtube.html id="cCbU3UMAXFs" %}
 The devastating internal damage to a tank hit by an anti-tank round.
 
 ## Features

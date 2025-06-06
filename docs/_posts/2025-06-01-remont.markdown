@@ -3,25 +3,31 @@ layout: post
 title:  "Nowa Huta Remont"
 date:   2025-06-01 18:24:00 +0200
 category: projects
+tags: multiplayer shooter
+description: Destructible buildings, deformable terrain and efficient vegetation. Optimised for multiplayer.
+image: /assets/remont-blok.webp
+header:
+  image: false
 ---
+
 Nowa Huta Remont was an intended sequel to [NHS]({% post_url 2025-05-25-nhs %}) developed during late 2021/early 2022.
 Despite the project being discontinued, it proved to be a valuable testing ground for highly technical mechanics.
 The most prominent of these is the fully destructible environment, optimised for both client-side performance and multiplayer bandwidth and stability.
 
 ## Gallery
-![Destructible building 1](/assets/remont-blok.webp)\
-A destructible apartment block.
+![Destructible building 1](/assets/remont-blok.webp)
+_A destructible apartment block._
 
-![Destructible building 2](/assets/remont-house.webp)\
-A destructible house.
+![Destructible building 2](/assets/remont-house.webp)
+_A destructible house._
 
-![Terrain scarring and tree uprooting](/assets/remont-explosion.webp)\
-Terrain scarring and uprooting of trees.
+![Terrain scarring and tree uprooting](/assets/remont-explosion.webp)
+_Terrain scarring and uprooting of trees._
 
-![Traversing a ruined building](/assets/remont-ruins.webp)\
-Traversing a ruined building.
+![Traversing a ruined building](/assets/remont-ruins.webp)
+_Traversing a ruined building._
 
-{% include youtubePlayer.html id="4cSLrHfHkyw" %}
+{% include embed/youtube.html id="4cSLrHfHkyw" %}
 A video showcasing grenades, destruction physics and sound effects.
 
 ## Features

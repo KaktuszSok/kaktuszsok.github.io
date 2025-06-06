@@ -3,20 +3,26 @@ layout: post
 title:  "Zuomisk"
 date:   2025-06-02 18:02:00 +0200
 category: projects
+tags: singleplayer tanks survival
+description: Wave-based tank combat in a desolate city. Hunt for supplies and survive as long as possible.
+image: /assets/zuomisk-battle.webp
+header:
+  image: false
 ---
+
 Zuomisk is a wave-based tank combat game developed during late 2022-2023.
 
 The player is a lone survivor in a desolate city swarming with hostile tanks.
 They must collect fuel and ammo to sustain their tank for as long as possible, as increasingly powerful enemies attempt to hunt them down.
 
 ## Gallery
-![Tank combat](/assets/zuomisk-battle.webp)\
-Combat against enemy tanks.
+![Tank combat](/assets/zuomisk-battle.webp)
+_Combat against enemy tanks._
 
-![Tank editor](/assets/zuomisk-editor.webp)\
-Choosing a combination of parts for the player's tank.
+![Tank editor](/assets/zuomisk-editor.webp)
+_Choosing a combination of parts for the player's tank._
 
-{% include youtubePlayer.html id="eEllGgUSnqA" %}
+{% include embed/youtube.html id="eEllGgUSnqA" %}
 Gameplay video, with audio.
 
 ## Features
