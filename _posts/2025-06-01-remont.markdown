@@ -27,8 +27,8 @@ _Terrain scarring and uprooting of trees._
 ![Traversing a ruined building](/assets/remont-ruins.webp)
 _Traversing a ruined building._
 
-{% include embed/youtube.html id="4cSLrHfHkyw" %}
-A video showcasing grenades, destruction physics and sound effects.
+{% include yt-captioned.html id="4cSLrHfHkyw" text="A video showcasing grenades, destruction physics and sound effects." %}
+
 
 ## Features
 - **Destructible buildings**

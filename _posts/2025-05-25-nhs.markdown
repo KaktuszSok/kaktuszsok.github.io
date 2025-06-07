@@ -24,8 +24,7 @@ _Fighting against bots using an explosive bin and submachine gun._
 ![Church encampment](/assets/nhs-church.png)
 _An improvised encampment atop a church._
 
-{% include embed/youtube.html id="cCbU3UMAXFs" %}
-The devastating internal damage to a tank hit by an anti-tank round.
+{% include yt-captioned.html id="cCbU3UMAXFs" text="The devastating internal damage to a tank hit by an anti-tank round." %}
 
 ## Features
 - **Room-based multiplayer** (using Photon Unity Networking)

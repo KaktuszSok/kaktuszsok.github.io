@@ -1,0 +1,18 @@
+{% unless page.caption_style_added %}
+  <style>
+    .caption-text {
+      display: block;
+      text-align: center;
+      font-style: normal;
+      font-size: 80%;
+      padding: 0;
+      color: #6d6c6c;
+    }
+  </style>
+  {% assign page.caption_style_added = true %}
+{% endunless %}
+
+<div class="caption-wrapper">
+  {% include embed/youtube.html id=include.id %}
+  <em class="caption-text">{{ include.text }}</em>
+</div>

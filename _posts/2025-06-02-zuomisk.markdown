@@ -22,8 +22,7 @@ _Combat against enemy tanks._
 ![Tank editor](/assets/zuomisk-editor.webp)
 _Choosing a combination of parts for the player's tank._
 
-{% include embed/youtube.html id="eEllGgUSnqA" %}
-Gameplay video, with audio.
+{% include yt-captioned.html id="eEllGgUSnqA" text="Gameplay video, with audio." %}
 
 ## Features
 - **Modular vehicles**
