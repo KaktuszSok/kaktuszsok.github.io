@@ -1,9 +1,9 @@
 const cacheName = "RUG-Nanocar Explainer-1.1";
 const contentToCache = [
-    "Build/Web.loader.js",
-    "Build/Web.framework.js",
-    "Build/Web.data",
-    "Build/Web.wasm",
+    "Build/64620ab52f409a8ae302942e753a7d70.loader.js",
+    "Build/533b6ffaa5603f307ef1468222751b1d.framework.js",
+    "Build/976e3ed857af509d1cad8db9bf810745.data",
+    "Build/603ef837984ebcf5016324a23767b93e.wasm",
     "TemplateData/style.css"
 
 ];
